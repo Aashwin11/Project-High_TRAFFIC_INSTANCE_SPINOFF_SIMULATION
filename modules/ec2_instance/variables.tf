@@ -25,3 +25,9 @@ variable "sg-ec2-id" {
 variable "project-name" {
   type = string
 }
+
+variable "helper-instance-count" {
+  description = "Number of helper (free-tier) EC2 instances"
+  type        = number
+  default     = 0
+}
